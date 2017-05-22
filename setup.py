@@ -77,7 +77,7 @@ if 'develop' in sys.argv or any(a.startswith('bdist') for a in sys.argv):
 setuptools_args = {}
 install_requires = setuptools_args['install_requires'] = [
     'jupyter_client',
-    'ipython',
+    'ipython<6.0.0',
     'ipykernel', # bless IPython kernel for now
     'prompt_toolkit>=1.0.0,<2.0.0',
     'pygments',
